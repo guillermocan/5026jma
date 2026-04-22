@@ -22,7 +22,7 @@
         
         
         */
-          /* Desplazamiento suave3
+        /* Desplazamiento suave50
         
         
         */
