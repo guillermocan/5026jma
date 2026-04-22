@@ -18,6 +18,10 @@
         
         
         */
+         /* Desplazamiento suave2
+        
+        
+        */
         html { scroll-behavior: smooth; }
         
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
