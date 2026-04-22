@@ -91,7 +91,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="#top">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#matricula">Matrícula</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../views/hola.php">Matrícula</a></li>
                     <li class="nav-item"><a class="nav-link" href="#fechas">Fechas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
                     <li class="nav-item ms-lg-3">
