@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5526/5526487.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I.E. 5026 José María Arguedas - Portal Institucional</title>
@@ -91,9 +92,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="#top">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../views/hola.php">Matrícula</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#fechas">Fechas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="views/matricula.php">Matrícula</a></li>
+                    <li class="nav-item"><a class="nav-link" href="views/fechas.php">Fechas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="views/eventos.php">Eventos</a></li>
                     <li class="nav-item ms-lg-3">
                         <button class="btn btn-outline-light px-4" data-bs-toggle="modal" data-bs-target="#loginModal">INTRANET</button>
                     </li>
@@ -107,7 +108,7 @@
             <div class="col-lg-7">
                 <h1 class="display-4 fw-bold">Accede a la <span style="color: #ffc107;">Matrícula 2026</span></h1>
                 <p class="lead mb-4">Liderazgo, valores y tecnología al servicio de la comunidad del Callao.</p>
-                <a href="#matricula" class="btn btn-warning btn-lg fw-bold px-5">MÁS INFORMACIÓN</a>
+                <a href="views/matricula.php" class="btn btn-warning btn-lg fw-bold px-5">MÁS INFORMACIÓN</a>
             </div>
         </div>
     </section>
@@ -119,9 +120,9 @@
                     <h2 class="fw-bold mb-4" style="color: var(--azul-corp);">Sobre nuestra Institución</h2>
                     <p class="fs-5 text-muted">Somos una institución emblemática dedicada a la formación integral de niños y jóvenes. Nuestro compromiso es brindar un entorno seguro y moderno para el aprendizaje.</p>
                     <div class="mt-4">
-                        <span class="badge bg-primary p-2 px-3">Excelencia</span>
-                        <span class="badge bg-danger p-2 px-3">Disciplina</span>
-                        <span class="badge bg-dark p-2 px-3">Innovación</span>
+                        <span class="badge bg-primary p-2 px-3">Disciplina</span>
+                        <span class="badge bg-danger p-2 px-3">Estudio</span>
+                        <span class="badge bg-dark p-2 px-3">Lealtad</span>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -134,7 +135,7 @@
                                 <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_Goc2H4HRoUniXjKfblCxwMgb4FLvkG6PTlS2IavSHueu_iq1XHJGBuC9WI0KCY1EtsNGJn5jRbn8EAEmabBstp8Ad64js2Qg9Ny70Y2JXfOHFldf3PQ9KQvEeBvgzRi5zMhijg=s680-w680-h510-rw" class="d-block w-100" alt="Fachada 2">
                             </div>
                             <div class="carousel-item" data-bs-interval="4000">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4k58KWX97g7nlbKMN8xNrKsvo-0qsYXqww&s" class="d-block w-100" alt="Fachada 3">
+                                <img src="https://scontent.flim28-1.fna.fbcdn.net/v/t39.30808-6/494927695_1252891033510612_6062229201764524861_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGxPiFpZRgmkMjcEcyIkDnQodJTg-hp-tih0lOD6Gn62OemlOhRMIVf9YtSOmWSQMXKm7QrAap3sUdf-rrb3yiZ&_nc_ohc=8bnQ1fsCAR4Q7kNvwFRg4pZ&_nc_oc=AdrtTFLDiEqJxtiJLHMsHIkSLy3L6RGocKFco882-nUXr-vkFD27v0-3wLOV-h0UWFE&_nc_zt=23&se=-1&_nc_ht=scontent.flim28-1.fna&_nc_gid=LAyKDN-IB-R_z-hYQw812g&_nc_ss=7b2a8&oh=00_Af1ONeImlW0odJVCWCiU0GNEm6XkFZG4W872uJEPbs0e8g&oe=69EF0E3F" class="d-block w-100" alt="Fachada 3">
                             </div>
                         </div>
                     </div>
