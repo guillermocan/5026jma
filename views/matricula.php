@@ -87,6 +87,11 @@
                     <li class="nav-item ms-lg-3">
                         <button class="btn btn-outline-light px-4 fw-bold" data-bs-toggle="modal" data-bs-target="#loginModal">INTRANET</button>
                     </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="registro_apoderado.php" class="btn btn-danger px-3 fw-bold shadow-sm">
+                            <i class="bi bi-person-plus-fill"></i> REGISTRARSE
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
