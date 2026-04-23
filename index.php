@@ -99,7 +99,7 @@
                         <button class="btn btn-outline-light px-4" data-bs-toggle="modal" data-bs-target="#loginModal">INTRANET</button>
                     </li>
                     <li class="nav-item ms-lg-2">
-                        <a href="registro_apoderado.php" class="btn btn-danger px-3 fw-bold shadow-sm">
+                        <a href="views/registro_apoderado.php" class="btn btn-danger px-3 fw-bold shadow-sm">
                             <i class="bi bi-person-plus-fill"></i> REGISTRARSE
                         </a>
                     </li>
@@ -254,8 +254,8 @@
                 <div class="col-md-6 text-md-end">
                     <div class="dev-info p-3 border border-secondary d-inline-block text-start">
                         <p class="mb-1 fw-bold text-warning small">SOFTWARE DESARROLLADO POR:</p>
-                        <p class="mb-0 fs-6 text-white">[Nombre de tu Empresa]</p>
-                        <p class="small mb-0">Contacto: desarrolladores@u-unac.edu.pe</p>
+                        <p class="mb-0 fs-6 text-white">Grupo 1</p>
+                        <p class="small mb-0">Contacto: dipradom@unac.edu.pe</p>
                     </div>
                 </div>
             </div>

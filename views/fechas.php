@@ -173,9 +173,8 @@
                 <div class="col-md-6 text-center text-md-end">
                     <div class="dev-info d-inline-block text-start shadow-sm">
                         <p class="mb-1 fw-bold text-warning small text-uppercase">Software desarrollado por:</p>
-                        <p class="mb-0 fs-6 text-white">[Tu Nombre / Grupo de Estudio]</p>
-                        <p class="small mb-0 text-secondary">FIIS - Universidad Nacional del Callao</p>
-                        <p class="small mb-0 text-secondary">Versión 1.0 - 2026</p>
+                        <p class="mb-0 fs-6 text-white">Grupo 1</p>
+                        <p class="small mb-0 text-secondary">Contacto: dipradom@unac.edu.pe</p>
                     </div>
                 </div>
             </div>

@@ -108,8 +108,8 @@
             <div class="col-md-4">
                 <div class="step-card shadow">
                     <div class="step-number">1</div>
-                    <h5 class="fw-bold text-uppercase">Verificar Vacante</h5>
-                    <p class="small">Consulte en nuestra sección de <strong>Fechas</strong> o en secretaría si hay vacantes disponibles para el grado deseado.</p>
+                    <h5 class="fw-bold text-uppercase">Verificar fechas</h5>
+                    <p class="small">Consulte en nuestra sección de <strong>Fechas</strong> los días correspondientes de matrícula.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -122,8 +122,8 @@
             <div class="col-md-4">
                 <div class="step-card shadow">
                     <div class="step-number">3</div>
-                    <h5 class="fw-bold text-uppercase">Entrega Presencial</h5>
-                    <p class="small">Acuda a la institución el día programado según el cronograma para la firma del acta de matrícula.</p>
+                    <h5 class="fw-bold text-uppercase">Matrícula virtual</h5>
+                    <p class="small">Acceda a la intranet el día correspondiente y realice su matrícula, padres nuevos deben registrarse</p>
                 </div>
             </div>
         </div>
@@ -168,8 +168,8 @@
                 <div class="col-md-6 text-center text-md-end">
                     <div class="dev-info d-inline-block text-start">
                         <p class="mb-1 fw-bold text-warning small text-uppercase">Software desarrollado por:</p>
-                        <p class="mb-0 fs-6 text-white">[Tu Nombre / Grupo]</p>
-                        <p class="small mb-0 text-secondary">FIIS - UNAC</p>
+                        <p class="mb-0 fs-6 text-white">Grupo 1</p>
+                        <p class="small mb-0 text-secondary">Contacto: dipradom@unac.edu.pe</p>
                     </div>
                 </div>
             </div>

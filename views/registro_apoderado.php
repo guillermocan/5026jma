@@ -15,7 +15,7 @@
         
         .registro-container { background: white; border-radius: 15px; overflow: hidden; color: #333; }
         .img-colegio {
-            background: url('../assets/img/fachada_colegio.jpg') center/cover;
+            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3znDJ0zqjni-ZS6U-g_DTOsHTlLRls0EWHsecFUriBNhZOBVk5mkhEEYkVfZzfjS8X94_QxFAQkKVfzbpTxI3BGDS8wzgwYDPvmxpzM3sbqSkNaXPI6yDm27mQhC3BrmsuRYzAy0W-5U/w1200-h630-p-k-no-nu/FOTO-1.jpg') center/cover;
             min-height: 400px;
         }
         
@@ -36,6 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold text-uppercase align-items-center">
                     <li class="nav-item"><a class="nav-link" href="../index.php">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matricula.php">MATRÍCULA</a></li>
                     <li class="nav-item"><a class="nav-link" href="fechas.php">FECHAS</a></li>
                     <li class="nav-item"><a class="nav-link" href="eventos.php">EVENTOS</a></li>
                     <li class="nav-item ms-lg-3">
@@ -109,13 +110,37 @@
                 <div class="col-md-6 text-center text-md-end">
                     <div class="dev-info d-inline-block text-start">
                         <p class="mb-1 fw-bold text-warning small text-uppercase">Software desarrollado por:</p>
-                        <p class="mb-0 fs-6 text-white">[Tu Nombre / Grupo]</p>
-                        <p class="small mb-0 text-secondary">FIIS - Universidad Nacional del Callao</p>
+                        <p class="mb-0 fs-6 text-white">Grupo 1</p>
+                        <p class="small mb-0 text-secondary">Contacto: dipradom@unac.edu.pe</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title fw-bold text-uppercase">Acceso Intranet</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 text-dark">
+                    <form action="../auth/login_auth.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">DNI USUARIO</label>
+                            <input type="text" name="username" class="form-control form-control-lg" placeholder="Ingrese su DNI" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">CONTRASEÑA</label>
+                            <input type="password" name="password" class="form-control form-control-lg" placeholder="********" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-3 mt-2 text-uppercase">Ingresar al Sistema</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

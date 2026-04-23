@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $pdo->commit();
         // Redirigir al inicio con éxito
-        header("Location: ../index.php?registro=exito");
+        header("Location: ../index.php");
 
     } catch (Exception $e) {
         $pdo->rollBack();
