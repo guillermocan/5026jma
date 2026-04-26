@@ -1,6 +1,16 @@
 <?php
 session_start();
-$nombreUsuario = $_SESSION['usuario_nombre'] ?? "Usuario"; 
+
+// SEGURIDAD: Solo Apoderados
+if (!isset($_SESSION['ID_Usuario']) || $_SESSION['Rol'] !== 'Apoderado') {
+    header("Location: ../index.php?error=acceso_prohibido");
+    exit();
+}
+
+// Usamos el nombre que guardamos en el login
+$nombreUsuario = $_SESSION['NombreFull'] ?? "Usuario"; 
+
+// Extraemos la primera letra del nombre para el círculo
 $inicial = strtoupper(substr($nombreUsuario, 0, 1));
 ?>
 <!DOCTYPE html>
@@ -154,12 +164,24 @@ $inicial = strtoupper(substr($nombreUsuario, 0, 1));
             <div class="ms-auto">
                 <div class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        <div class="profile-circle"><?php echo $inicial; ?></div>
+                        <div class="profile-circle shadow-sm"><?php echo $inicial; ?></div>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-3 animate__animated animate__fadeIn">
-                        <li><h6 class="dropdown-header">Bienvenido, <?php echo $nombreUsuario; ?></h6></li>
+                        <li>
+                            <h6 class="dropdown-header d-flex align-items-center">
+                                <i class="fa-solid fa-user-circle me-2 text-primary"></i>
+                                <div>
+                                    <span class="d-block fw-bold text-dark"><?php echo $nombreUsuario; ?></span>
+                                    <small class="text-muted">Apoderado</small>
+                                </div>
+                            </h6>
+                        </li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="../auth/logout.php"><i class="fa-solid fa-power-off me-2"></i>Cerrar Sesión</a></li>
+                        <li>
+                            <a class="dropdown-item text-danger fw-bold" href="../auth/logout.php">
+                                <i class="fa-solid fa-power-off me-2"></i>Cerrar Sesión
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -174,7 +196,7 @@ $inicial = strtoupper(substr($nombreUsuario, 0, 1));
             </div>
             
             <div class="d-flex flex-wrap justify-content-center gap-5">
-                <a href="matricula.php" class="card-portal card-matricula animate__animated animate__zoomIn animate__delay-1s">
+                <a href="matricular.php" class="card-portal card-matricula animate__animated animate__zoomIn animate__delay-1s">
                     <div class="icon-box">
                         <i class="fa-solid fa-file-signature"></i>
                     </div>

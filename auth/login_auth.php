@@ -15,11 +15,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verificamos si existe el usuario y si la contraseña coincide (Texto plano según tu BD actual)
         if ($usuario && $pass_input === $usuario['Contrasena']) {
-            
-            // Seteamos variables de sesión
             $_SESSION['ID_Usuario'] = $usuario['ID_Usuario'];
             $_SESSION['NombreFull'] = $usuario['Nombres'] . " " . $usuario['Apellidos'];
             $_SESSION['Rol']        = $usuario['Rol'];
+
+            // --- NUEVO: Obtener el ID_Apoderado si el rol es Apoderado ---
+            if ($usuario['Rol'] === 'Apoderado') {
+                $stmtA = $pdo->prepare("SELECT ID_Apoderado FROM Apoderado WHERE ID_Usuario = :idU LIMIT 1");
+                $stmtA->execute(['idU' => $usuario['ID_Usuario']]);
+                $apoderado = $stmtA->fetch(PDO::FETCH_ASSOC);
+        
+                if ($apoderado) {
+                    $_SESSION['ID_Apoderado'] = $apoderado['ID_Apoderado'];
+                }
+            }
 
             // Obtenemos el rol limpio para comparar
             $rol = $usuario['Rol'];

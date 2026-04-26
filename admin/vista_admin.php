@@ -113,7 +113,7 @@ try {
                     <ul class="navbar-nav me-auto fw-bold text-uppercase">
                         <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionar_matriculas.php">Gestionar Matrículas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gestionar_usuarios.php">Gestionar Usuarios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mantenimiento.php">Mantenimiento</a></li>
                         <li class="nav-item"><a class="nav-link" href="dashboards.php">Dashboards</a></li>
                     </ul>
 
