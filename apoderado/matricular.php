@@ -58,7 +58,7 @@ $tieneMatriculas = $stmtHijos->fetchColumn() > 0;
                     <h2 class="text-center fw-bold text-primary mb-4">Ficha de Matrícula 2026</h2>
                     <hr>
                     
-                    <form id="formMatricula">
+                    <form id="formMatricula" enctype="multipart/form-data">
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <label class="form-label fw-bold">DNI del Estudiante</label>
@@ -170,7 +170,7 @@ $tieneMatriculas = $stmtHijos->fetchColumn() > 0;
                     <p><strong>Estudiante:</strong> ${document.getElementById('nombres').value} ${document.getElementById('apellidoP').value} ${document.getElementById('apellidoM').value}</p>
                     <p><strong>F. Nacimiento:</strong> ${document.getElementById('fec_nac').value}</p>
                     <p><strong>Nivel:</strong> ${document.getElementById('nivel').value}</p>
-                    <p><strong>Grado:</strong> ${document.getElementById('grado').value}° de Primaria/Secundaria</p>
+                    <p><strong>Grado:</strong> ${document.getElementById('grado').value}°</p>
                     <hr>
                     <p class="text-danger small fw-bold text-center">¿Desea enviar esta solicitud para revisión?</p>
                 </div>
