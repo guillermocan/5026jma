@@ -179,8 +179,8 @@ try {
                                 </div>
                                 <i class="bi bi-chevron-right text-muted"></i>
                             </div>
-                            <h5 class="fw-bold text-dark">Control de Usuarios</h5>
-                            <p class="text-muted small mb-0">Administre el acceso, roles y estados de los apoderados registrados en el sistema.</p>
+                            <h5 class="fw-bold text-dark">Mantenimiento</h5>
+                            <p class="text-muted small mb-0">Administre los registros.</p>
                         </a>
                     </div>
                 </div>

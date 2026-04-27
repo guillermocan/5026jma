@@ -103,6 +103,21 @@ $tieneMatriculas = $stmtHijos->fetchColumn() > 0;
                             </div>
                         </div>
 
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">Copia de DNI (PDF/JPG)</label>
+                                <input type="file" name="dni_file" class="form-control" accept=".pdf,.jpg,.jpeg,.png">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">Expediente Médico</label>
+                                <input type="file" name="med_file" class="form-control" accept=".pdf,.jpg,.jpeg,.png">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">Acta de Notas 2025</label>
+                                <input type="file" name="nota_file" class="form-control" accept=".pdf,.jpg,.jpeg,.png">
+                            </div>
+                        </div>
+
                         <div class="text-center mt-5">
                             <button type="button" onclick="mostrarResumen()" class="btn btn-primary btn-lg px-5 shadow">
                                 <i class="fa-solid fa-check-double me-2"></i> REGISTRAR MATRÍCULA
@@ -181,8 +196,12 @@ $tieneMatriculas = $stmtHijos->fetchColumn() > 0;
 
         // 3. Envío final al procesador
         function enviarFormulario() {
+            const btn = event.target; // Captura el botón que hizo clic
+            btn.disabled = true;      // Bloquea el botón para evitar doble clic
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
+
             const formData = new FormData(document.getElementById('formMatricula'));
-            
+    
             fetch('procesar_matricular.php', {
                 method: 'POST',
                 body: formData
@@ -190,18 +209,27 @@ $tieneMatriculas = $stmtHijos->fetchColumn() > 0;
             .then(res => res.text())
             .then(data => {
                 const response = data.trim();
-                
+        
                 if(response === 'success') {
-                    alert('Matrícula realizada');
+                    alert('¡Matrícula realizada con éxito!');
                     window.location.href = 'vista_apoderado.php';
                 } else if(response.startsWith('dni_exists')) {
                     const parts = response.split('|');
-                    alert(`El DNI ${parts[1]} ya está registrado con: ${parts[2]}`);
+                    alert(`Aviso: El DNI ${parts[1]} ya está registrado a nombre de ${parts[2]}.`);
+                    btn.disabled = false;
+                    btn.innerText = 'Confirmar y Enviar';
                 } else {
-                    alert('Error en el servidor: ' + response);
+                    alert('Error: ' + response);
+                    btn.disabled = false;
+                    btn.innerText = 'Confirmar y Enviar';
+                    console.log("Detalle del error:", response); // Para que veas el error real en consola
                 }
             })
-            .catch(err => console.error(err));
+            .catch(err => {
+                alert('Error de conexión.');
+                btn.disabled = false;
+                btn.innerText = 'Confirmar y Enviar';
+            });
         }
     </script>
 </body>
